@@ -273,7 +273,7 @@ main {
 .inventory-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    border-color: #1fd44d;
+    border-color: #1d4ed8;
 }
 
 .card-image-box {
@@ -296,7 +296,7 @@ main {
     color: #111827;
 }
 
-.category-tag {
+.categories-tag {
     font-size: 0.8rem;
     color: #6b7280;
     background: #f3f4f6;
@@ -330,7 +330,6 @@ main {
     height: 500px;
     perspective: 1000px;
     position: relative;
-    /* Initial Zoom State (Small) */
     transform: scale(0.8);
     opacity: 0;
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s;
@@ -379,35 +378,39 @@ main {
     object-fit: contain;
 }
 
+.small-note {
+    margin-bottom: 1rem;
+}
+
 .modal-back {
-    background: #111827;
-    color: white;
+    background: #ffffff;
     transform: rotateY(180deg);
     text-align: center;
 }
 
 .modal-back h3 {
-    color: #1fd44d;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 
 .modal-divider {
     width: 50px;
     height: 3px;
-    background: #1fd44d;
+    background: #1d4ed8;
     margin-bottom: 1.5rem;
 }
 
-.modal-price {
-    margin-top: 2rem;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #9ca3af;
+.modal-desc {
+    margin-bottom: 2rem;
 }
 
-.modal-price span {
-    color: white;
+.modal-price, .modal-date {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.modal-price span, .modal-date span {
+    color: #25769c;
 }
 
 .close-modal {

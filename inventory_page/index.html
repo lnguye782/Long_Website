@@ -78,10 +78,10 @@
                 <p>Tools of the trade. Gadgets for fun. <br>The hardware that powers my creativity.</p>
 
                 <div class="filter-bar">
-                    <button class="filter-btn active" onclick="filterSelection('all')">All</button>
-                    <button class="filter-btn" onclick="filterSelection('tech')">Tech</button>
-                    <button class="filter-btn" onclick="filterSelection('sport')">Sport</button>
-                    <button class="filter-btn" onclick="filterSelection('edc')">EDC & Gear</button>
+                    <button class="filter-btn active" onclick="filterSelection('all', event)">All</button>
+                    <button class="filter-btn" onclick="filterSelection('tech', event)">Tech</button>
+                    <button class="filter-btn" onclick="filterSelection('sport', event)">Sport</button>
+                    <button class="filter-btn" onclick="filterSelection(['edc', 'gear'], event)">EDC & Gear</button>
                 </div>
             </div>
         </section>
@@ -102,13 +102,15 @@
                         src=""
                         alt=""
                     >
-                    <h3 id="modal-title">Product Name</h3>
+                    <h3 class="small-note" id="modal-title">Product Name</h3>
+                    <span class="categories-tag" id="modal-note">Product Note</span>
                 </div>
                 <div class="modal-card-face modal-back">
                     <h3 id="modal-back-title">Product Name</h3>
                     <div class="modal-divider"></div>
-                    <p id="modal-desc">Description goes here</p>
-                    <div class="modal-price">Purchased: <span id="modal-price">$0.00</span></div>
+                    <p class="modal-desc" id="modal-desc">Description goes here</p>
+                    <div class="modal-price">Price: <span id="modal-price">$0.00</span></div>
+                    <div class="modal-date">Date of Purchase: <span id="modal-date">Month 00, 0000</span></div>
                 </div>
             </div>
         </div>
