@@ -259,11 +259,166 @@ main {
     padding: 2rem 0 6rem 0;
 }
 
+.inventory-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #f3f4f6;
+}
 
+.inventory-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: #1fd44d;
+}
 
+.card-image-box {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
 
+.card-image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
 
+.card-details h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #111827;
+}
 
+.category-tag {
+    font-size: 0.8rem;
+    color: #6b7280;
+    background: #f3f4f6;
+    padding: 0.2rem 0.8rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-card-scene {
+    width: 350px;
+    height: 500px;
+    perspective: 1000px;
+    position: relative;
+    /* Initial Zoom State (Small) */
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s;
+}
+
+.modal-overlay.active .modal-card-scene {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.modal-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    cursor: pointer;
+}
+
+.modal-card-inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.modal-card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.modal-front {
+    background: white;
+}
+
+.modal-front img {
+    max-width: 90%;
+    max-height: 70%;
+    margin-bottom: 2rem;
+    object-fit: contain;
+}
+
+.modal-back {
+    background: #111827;
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+.modal-back h3 {
+    color: #1fd44d;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.modal-divider {
+    width: 50px;
+    height: 3px;
+    background: #1fd44d;
+    margin-bottom: 1.5rem;
+}
+
+.modal-price {
+    margin-top: 2rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #9ca3af;
+}
+
+.modal-price span {
+    color: white;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    z-index: 2001;
+}
 
 footer {
     background-color: #111827;

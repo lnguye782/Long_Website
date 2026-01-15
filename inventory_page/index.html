@@ -78,7 +78,7 @@
                 <p>Tools of the trade. Gadgets for fun. <br>The hardware that powers my creativity.</p>
 
                 <div class="filter-bar">
-                    <button class="filter-btn actice" onclick="filterSelection('all')">All</button>
+                    <button class="filter-btn active" onclick="filterSelection('all')">All</button>
                     <button class="filter-btn" onclick="filterSelection('tech')">Tech</button>
                     <button class="filter-btn" onclick="filterSelection('sport')">Sport</button>
                     <button class="filter-btn" onclick="filterSelection('edc')">EDC & Gear</button>
@@ -89,12 +89,30 @@
         <section class="inventory-section">
             <div class="container">
                 <div class="inventory-grid" id="inventory-grid"></div>
-                    </div>
+            </div>
         </section>
     </main>
 
     <div id="item-modal" class="modal-overlay">
-
+        <div class="modal-card-scene">
+            <div class="modal-card-inner">
+                <div class="modal-card-face modal-front">
+                    <img 
+                        id="modal-img"
+                        src=""
+                        alt=""
+                    >
+                    <h3 id="modal-title">Product Name</h3>
+                </div>
+                <div class="modal-card-face modal-back">
+                    <h3 id="modal-back-title">Product Name</h3>
+                    <div class="modal-divider"></div>
+                    <p id="modal-desc">Description goes here</p>
+                    <div class="modal-price">Purchased: <span id="modal-price">$0.00</span></div>
+                </div>
+            </div>
+        </div>
+        <span class="close-modal">&times;</span>
     </div>
 
     <footer>
