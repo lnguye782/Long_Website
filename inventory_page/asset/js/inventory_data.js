@@ -4,8 +4,8 @@ const inventoryData = [
         name: "Sony Alpha 7 III",
         note: "Digital Camera",
         categories: ["tech"],
-        price: "$1,475.00",
-        date: "July 27, 2023",
+        purchasePrice: "$1,475.00",
+        date: "Jul 27, 2023",
         desc: "Full-frame Mirrorless 24.2MP Camera with FE 28-70mm 3.5-5.6 OSS",
         image: "asset/images/inventory/sony_alpha_7_iii.png",
     },
@@ -15,7 +15,7 @@ const inventoryData = [
         name: "Insta360 X4 - Ski Bundle",
         note: "Action Camera",
         categories: ["tech"],
-        price: "$501.00",
+        purchasePrice: "$501.00",
         date: "Jan 03, 2025",
         desc: "8K 360° with FlowState Stabilization, Waterproof Body, Ski Pole Mount",
         image: "asset/images/inventory/insta360_x4_ski_bundle.png",
@@ -26,7 +26,7 @@ const inventoryData = [
         name: "Meta Wayfarer (Gen 2)",
         categories: ["tech"],
         note: "Smartglasses",
-        price: "$320.00",
+        purchasePrice: "$320.00",
         date: "Jan 01, 2026",
         desc: "Meta AI with Ultra-wide 12 MP Camera and 3K Video, Open-ear Audio, 8-hour Battery Life, and Classic Ray-Ban Wayfarer Design",
         image: "asset/images/inventory/meta_wayfarer_gen_2.png",
@@ -37,7 +37,7 @@ const inventoryData = [
         name: "Fujifilm Instax Mini 41",
         note: "Instant Camera",
         categories: ["tech"],
-        price: "$107.99",
+        purchasePrice: "$107.99",
         date: "Aug 06, 2025",
         desc: "Instant Mini Film with Automatic Exposure, Built-in Flash, Selfie Mode",
         image: "asset/images/inventory/fujifilm_instax_mini_41.png",
@@ -48,8 +48,8 @@ const inventoryData = [
         name: "Bambu Lab A1 Combo",
         note: "3D Printer",
         categories: ["tech"],
-        price: "$489.99",
-        date: "July 02, 2024",
+        purchasePrice: "$489.99",
+        date: "Jul 02, 2024",
         desc: "Multi-color 3D Printer with 256*256*256 mm³ Build Volume",
         image: "asset/images/inventory/bambu_a1_combo.png",
     },
@@ -59,7 +59,7 @@ const inventoryData = [
         name: "MacBook Air (M2)",
         note: "Laptop",
         categories: ["tech"],
-        price: "$1,099.00",
+        purchasePrice: "$1,099.00",
         date: "Aug 20, 2022",
         desc: "13.6-inch Liquid Retina Display with Apple M2 Chip, 8GB Unified Memory, 256GB - Midnight",
         image: "asset/images/inventory/macbook_air_m2.png",
@@ -70,7 +70,7 @@ const inventoryData = [
         name: "iPad Pro 13-inch (M4)",
         note: "Tablet",
         categories: ["tech"],
-        price: "$1,199.00",
+        purchasePrice: "$1,199.00",
         date: "Dec 01, 2024",
         desc: "13-inch Ultra Retina XDR OLED with Apple M4 Chip, Wi-Fi, 256GB - Silver",
         image: "asset/images/inventory/ipad-pro-13-inch-m4.png",
@@ -81,8 +81,8 @@ const inventoryData = [
         name: "iPhone 14 Pro Max",
         note: "Smartphone",
         categories: ["tech", "edc"],
-        price: "$1,199.00",
-        date: "Sept 16, 2022",
+        purchasePrice: "$1,199.00",
+        date: "Sep 16, 2022",
         desc: "6.7-inch Super Retina XDR OLED with A16 Bionic Chip, 256GB - Deep Purple",
         image: "asset/images/inventory/iphone_14_pro_max.png",
     },
@@ -92,8 +92,8 @@ const inventoryData = [
         name: "Apple Watch Ultra 2",
         note: "Smartwatch",
         categories: ["tech", "edc"],
-        price: "$799.00",
-        date: "Sept 22, 2023",
+        purchasePrice: "$799.00",
+        date: "Sep 22, 2023",
         desc: "GPS + Cellular 49mm Titanium Case with Indigo Alpine Loop Band",
         image: "asset/images/inventory/watch_ultra_2.png",
     },
@@ -103,7 +103,7 @@ const inventoryData = [
         name: "Apple Watch Nike Series 7",
         note: "Smartwatch",
         categories: ["tech", "edc"],
-        price: "$429.00",
+        purchasePrice: "$429.00",
         date: "Oct 13, 2021",
         desc: "GPS 45mm Midnight Aluminium Case with Anthracite/Black Nike Sport Band",
         image: "asset/images/inventory/watch_nike_series_7.png",
@@ -114,7 +114,7 @@ const inventoryData = [
         name: "AirPods Max (Lightning)",
         note: "Headphones",
         categories: ["tech", "edc"],
-        price: "$499.99",
+        purchasePrice: "$499.99",
         date: "Mar 20, 2023",
         desc: "Over-ear Headphones with Active Noise Cancellation, Lightning Charging - Space Gray",
         image: "asset/images/inventory/airpods_max_lightning.png",
@@ -125,7 +125,7 @@ const inventoryData = [
         name: "Raspberry Pi 5",
         note: "Single-Board Computer",
         categories: ["tech"],
-        price: "$99.99",
+        purchasePrice: "$99.99",
         date: "Apr 30, 2025",
         desc: "Quad-core 2.4 GHz ARM Cortex-A76 Processor with 16GB LPDDR4X RAM",
         image: "asset/images/inventory/raspberry_pi_5.png",
@@ -136,7 +136,7 @@ const inventoryData = [
         name: "Raspberry Pi 4 Model B",
         note: "Single-Board Computer",
         categories: ["tech"],
-        price: "$69.99",
+        purchasePrice: "$69.99",
         date: "Oct 23, 2024",
         desc: "Quad-core 1.5 GHz ARM Cortex-A72 Processor with 8GB DDR4 RAM",
         image: "asset/images/inventory/raspberry_pi_4.png",
@@ -147,7 +147,7 @@ const inventoryData = [
         name: "Li-Ning Halbertec 8000",
         note: "Badminton",
         categories: ["sport"],
-        price: "3,700,000 VND ($154.00)",
+        purchasePrice: "3,700,000 VND ($154.00)",
         date: "December 2023",
         desc: "Even-balance, Medium-stiff, Control Racket in 4U, 26lbs String Tensions",
         image: "asset/images/inventory/lining_halbertec_8000.png",
@@ -158,7 +158,7 @@ const inventoryData = [
         name: "Yonex Astrox 88D Pro 2024",
         note: "Badminton",
         categories: ["sport"],
-        price: "$238.50",
+        purchasePrice: "$238.50",
         date: "Apr 13, 2024",
         desc: "Head-heavy, Stiff, Offensive Racket in 4U, 26lbs String Tensions",
         image: "asset/images/inventory/yonex_astrox_88d_pro_2024.png",
@@ -169,10 +169,21 @@ const inventoryData = [
         name: "VS YouLong Red Limited",
         note: "Badminton | Year of the Loong",
         categories: ["sport"],
-        price: "2,000,000 VND ($83.00)",
+        purchasePrice: "2,000,000 VND ($83.00)",
         date: "December 2023",
         desc: "Head-heavy, Medium-stiff, Offensive Racket in 4U, 24lbs String Tensions",
         image: "asset/images/inventory/vs_youlong_red_limited.png",
+    },
+
+    {
+        id: "toyota-rav4-2018-limited",
+        name: "Toyota Rav4 2018 Limited",
+        note: "SUV",
+        categories: ["edc"],
+        purchasePrice: "$30,000",
+        date: "August 2018",
+        desc: "FWD with Leather Interior, Power Liftgate, and Advanced Safety Features",
+        image: "asset/images/inventory/toyota_rav4_2018_limited.png",
     },
 
     {
@@ -180,7 +191,7 @@ const inventoryData = [
         name: "Warby Parker Blount",
         note: "Eyeglasses",
         categories: ["edc"],
-        price: "$255.00",
+        purchasePrice: "$255.00",
         date: "Jun 27, 2025",
         desc: "Polished Gold Metal Frame (Wide) with Single-vision ($145), Blue-light-filtering Lenses ($50), 1.67 High-index Material ($60), Classic Coating (Free)",
         image: "asset/images/inventory/warby_parker_blount.png",
@@ -190,8 +201,8 @@ const inventoryData = [
         id: "on-mens-cloud-x-4",
         name: "On Men's Cloud X 4",
         note: "Shoes",
-        categories: ["gear"],
-        price: "$159.99",
+        categories: ["edc"],
+        purchasePrice: "$159.99",
         date: "Aug 28, 2025",
         desc: "Men's Training Shoes, Size 10.5 (Medium/D), Ivory/Black Colorway",
         image: "asset/images/inventory/on_mens_cloud_x_4.png",
@@ -201,8 +212,8 @@ const inventoryData = [
         id: "sig-sauer-p365-xl",
         name: "Sig Sauer P365 XL",
         note: "Pistol",
-        categories: ["gear"],
-        price: "$600 + $259.99",
+        categories: ["sport"],
+        purchasePrice: "$600 + $259.99",
         date: "May 10, 2025",
         desc: "9mm Micro-Compact Pistol with Extended Grip, 12-round Capacity, Equipped with Holosun HE507K-GR X2",
         image: "asset/images/inventory/sig_sauer_p365_xl.png",
@@ -212,8 +223,8 @@ const inventoryData = [
         id: "rock-island-armory-m1911-a1",
         name: "Rock Island M1911 A1",
         note: "Pistol",
-        categories: ["gear"],
-        price: "$300",
+        categories: ["sport"],
+        purchasePrice: "$300",
         date: "Jun 30, 2025",
         desc: ".45 ACP Full-size 1911 with Steel Frame, 8-round Capacity, 5-inch Barrel, Classic GI-style Controls",
         image: "asset/images/inventory/rock_island_armory_m1911_a1.png",
@@ -223,8 +234,8 @@ const inventoryData = [
         id: "radical-firearms-ar-15",
         name: "Radical Firearms AR-15",
         note: "Rifle",
-        categories: ["gear"],
-        price: "$520",
+        categories: ["sport"],
+        purchasePrice: "$520",
         date: "Jan 11, 2025",
         desc: "5.56 NATO Semi-automatic AR-15 with Free-float M-LOK Handguard",
         image: "asset/images/inventory/radical_firearms_ar_15.png",
@@ -255,7 +266,7 @@ function renderInventory(filter) {
                 <div class="card-details">
                     <h3>${item.name}</h3>
                     <span class="categories-tag">
-                        ${item.categories.map(c => c.toUpperCase()).join(' & ')}
+                        ${item.categories.map(c => c.toUpperCase()).join(' · ')}
                     </span>
                 </div>
             `;
@@ -277,22 +288,22 @@ const closeBtn = document.querySelector('.close-modal');
 const mTitle = document.getElementById('modal-title');
 const mNote = document.getElementById('modal-note');
 const mBackTitle = document.getElementById('modal-back-title');
-const mPrice = document.getElementById('modal-price');
+const mPurchasePrice = document.getElementById('modal-purchase-price');
 const mDate = document.getElementById('modal-date');
 const mDesc = document.getElementById('modal-desc');
 const mImg = document.getElementById('modal-img');
 
 function openModal(item) {
-    mTitle.innerText = item.name;
-    mNote.innerText = item.note;
-    mBackTitle.innerText = item.name;
-    mPrice.innerText = item.price;
-    mDate.innerText = item.date;
-    mDesc.innerText = item.desc;
-    mImg.src = item.image;
+    mTitle.innerText = item.name ?? "";
+    mNote.innerText = item.note ?? "";
+    mBackTitle.innerText = item.name ?? "";
+    mPurchasePrice.innerText = item.purchasePrice?.trim() ? item.purchasePrice : "-";
+    mDate.innerText = item.date?.trim() ? item.date : "-";
+    mDesc.innerText = item.desc?.trim() ? item.desc : "-";
+    mImg.src = item.image ?? "";
+    mImg.alt = item.name ?? "";
 
     modal.classList.add('active');
-
     modalInner.classList.remove('is-flipped');
 }
 
