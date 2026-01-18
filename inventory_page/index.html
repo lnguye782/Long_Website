@@ -3,66 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="/inventory_page/asset/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
     <title>My Arsenal | Inventory</title>
 </head>
 <body>
-    <header>
-        <div class="container header-top">
-            <div>
-                <a href="/index.html">
-                    <img
-                        src="asset/images/long-logo.png"
-                        alt="Header Logo"
-                        width="60"
-                        height="60"
-                    >
-                </a>
-            </div>
-
-            <div class="search-bar">
-                <input type="search" id="search-input" placeholder="Search by Keyword...">
-                
-                <button>
-                    <i class="ri-search-line"></i>
-                </button>
-
-                <div class="search-results" id="search-results"></div>
-            </div>
-
-            <div class="social-media-icons">
-                <a href="https://github.com/lnguye782" class="icon-link">
-                    <i class="ri-github-fill"></i>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://www.instagram.com/lnguye74/" class="icon-link">
-                    <i class="ri-instagram-line"></i>
-                    <span>Instagram</span>
-                </a>
-                <a href="https://www.facebook.com/long.nguyen.john/" class="icon-link">
-                    <i class="ri-facebook-circle-line"></i>
-                    <span>Facebook</span>
-                </a>
-            </div>
-        </div>
-
-        <nav class="header-nav">
-            <div class="container">
-                <div class="hamburger-menu">
-                    <i class="ri-menu-line"></i>
-                </div>
-
-                <ul class="header-links" id="header-links">
-                    <li><a href="/about_page/index.html">LONG</a></li>
-                    <li><a href="/experience_page/index.html">EXPERIENCE</a></li>
-                    <li><a href="/inventory_page/index.html">INVENTORY</a></li>
-                    <li><a href="/computer_page/index.html">PC BUILD</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <div id="header"></div>
     
     <main>
         <div class="container">
@@ -109,7 +56,7 @@
                     <h3 id="modal-back-title">Product Name</h3>
                     <div class="modal-divider"></div>
                     <p class="modal-desc" id="modal-desc">Description goes here</p>
-                    <div class="modal-purchase-price">Price: <span id="modal-purchase-price">$0.00</span></div>
+                    <div class="modal-purchase-price">Price Paid: <span id="modal-purchase-price">$0.00</span></div>
                     <div class="modal-date">Date of Purchase: <span id="modal-date">Month 00, 0000</span></div>
                 </div>
             </div>
@@ -117,43 +64,9 @@
         <span class="close-modal">&times;</span>
     </div>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col brand-col">
-                    <div class="logo-title-group">
-                        <img
-                            src="asset/images/long-logo.png"
-                            alt="Footer Logo"
-                            width="60"
-                            class="footer-logo"
-                        >
-                        <h3>Long Vuong Nguyen</h3>
-                    </div>
-                    <p>[something will be here]</p>
-                    <p>[something will be here]</p>
-                </div>
+    <div id="footer"></div>
 
-                <div class="footer-col contact-col">
-                    <h3>Contact Me</h3>
-                    <ul class="footer-links">
-                        <li><a href="mailto:lnguye782@gmail.com?subject=Let's Connect">Have A Sip Together</a></li>
-                        <li>
-                            <i class="ri-mail-line"></i>
-                            <span>lnguye782@gmail.com</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 - All Rights Reserved.</p>
-                <p>Designed by <strong>Long Vuong Nguyen</strong></p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="asset/js/inventory_data.js"></script>
-    <script src="asset/js/script.js"></script>
+    <script src="/inventory_page/asset/js/inventory_data.js"></script>
+    <script src="/global_asset/js/script.js"></script>
 </body>
 </html>

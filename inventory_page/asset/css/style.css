@@ -484,7 +484,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #1fd44d;
+    color: #1d4ed8;
 }
 
 .footer-bottom {
@@ -519,7 +519,7 @@ footer {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #1fd44d;
+        background-color: #2563eb;
     }
 
     .header-links.active {
